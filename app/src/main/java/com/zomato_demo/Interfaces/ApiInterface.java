@@ -1,6 +1,6 @@
 package com.zomato_demo.Interfaces;
 
-import com.zomato_demo.Models.DetailsModel;
+import com.zomato_demo.models.DetailsModel;
 import com.zomato_demo.common.Const;
 
 import retrofit2.Call;

@@ -1,11 +1,12 @@
-package com.zomato_demo.Models;
+package com.zomato_demo.models;
 
 
+import java.io.Serializable;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class DetailsModel{
+public class DetailsModel implements Serializable {
 
     @SerializedName("id")
     @Expose

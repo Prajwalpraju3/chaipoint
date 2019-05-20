@@ -1,9 +1,8 @@
 package com.zomato_demo.ViewModels;
 
 import android.app.Application;
-import android.content.Context;
 
-import com.zomato_demo.Models.DetailsModel;
+import com.zomato_demo.models.DetailsModel;
 import com.zomato_demo.NetworkManager.DetailsManager;
 
 import androidx.annotation.NonNull;

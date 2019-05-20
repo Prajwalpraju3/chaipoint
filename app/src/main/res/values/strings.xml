@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ZomatoDemo</string>
     <string name="no_internet">There seems to be an issue with the network connection. Try again.</string>
+    <string name="back">back button</string>
 </resources>

@@ -1,14 +1,11 @@
 package com.zomato_demo.NetworkManager;
 
 import android.content.Context;
-import android.text.TextUtils;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.zomato_demo.Interfaces.ApiInterface;
 import com.zomato_demo.Interfaces.DataCallBackListener;
-import com.zomato_demo.Models.DetailsModel;
+import com.zomato_demo.models.DetailsModel;
 import com.zomato_demo.R;
 import com.zomato_demo.common.AppUtils;
 
@@ -44,8 +41,8 @@ public class DetailsManager {
             @Override
             public void onResponse(Object body) {
                 if (body instanceof DetailsModel) {
-                    DetailsModel DetailsModel = (DetailsModel) body;
-                   Toast.makeText(context, DetailsModel.getName(),Toast.LENGTH_SHORT).show();
+                    DetailsModel detailsModel = (DetailsModel) body;
+                    data.setValue(detailsModel);
 
                 }
             }
