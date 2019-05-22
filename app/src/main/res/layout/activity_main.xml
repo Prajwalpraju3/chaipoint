@@ -5,18 +5,76 @@
 
     <data>
 
+        <variable
+            name="location"
+            type="Integer" />
+
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".ZomotoList.MainActivity">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            />
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="16dp"
+                android:src="@drawable/search" />
+
+            <com.zomato_demo.common.DelayAutoCompleteTextView
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/search_bg"
+                android:hint="@string/search"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:padding="10dp"
+                android:layout_marginEnd="16dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/greay"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="16dp"
+                android:src="@{location==1?@drawable/location_on:@drawable/location_off}" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
 
     </LinearLayout>
 </layout>
