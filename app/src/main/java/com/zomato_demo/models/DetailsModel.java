@@ -270,592 +270,592 @@ public class DetailsModel implements Serializable {
 
 
     //location class
-
-    public class Location {
-
-        @SerializedName("address")
-        @Expose
-        private String address;
-        @SerializedName("locality")
-        @Expose
-        private String locality;
-        @SerializedName("city")
-        @Expose
-        private String city;
-        @SerializedName("latitude")
-        @Expose
-        private String latitude;
-        @SerializedName("longitude")
-        @Expose
-        private String longitude;
-        @SerializedName("zipcode")
-        @Expose
-        private String zipcode;
-        @SerializedName("country_id")
-        @Expose
-        private String countryId;
-
-        public String getAddress() {
-            return address;
-        }
-
-        public void setAddress(String address) {
-            this.address = address;
-        }
-
-        public String getLocality() {
-            return locality;
-        }
-
-        public void setLocality(String locality) {
-            this.locality = locality;
-        }
-
-        public String getCity() {
-            return city;
-        }
-
-        public void setCity(String city) {
-            this.city = city;
-        }
-
-        public String getLatitude() {
-            return latitude;
-        }
-
-        public void setLatitude(String latitude) {
-            this.latitude = latitude;
-        }
-
-        public String getLongitude() {
-            return longitude;
-        }
-
-        public void setLongitude(String longitude) {
-            this.longitude = longitude;
-        }
-
-        public String getZipcode() {
-            return zipcode;
-        }
-
-        public void setZipcode(String zipcode) {
-            this.zipcode = zipcode;
-        }
-
-        public String getCountryId() {
-            return countryId;
-        }
-
-        public void setCountryId(String countryId) {
-            this.countryId = countryId;
-        }
-
-    }
+//
+//    public class Location {
+//
+//        @SerializedName("address")
+//        @Expose
+//        private String address;
+//        @SerializedName("locality")
+//        @Expose
+//        private String locality;
+//        @SerializedName("city")
+//        @Expose
+//        private String city;
+//        @SerializedName("latitude")
+//        @Expose
+//        private String latitude;
+//        @SerializedName("longitude")
+//        @Expose
+//        private String longitude;
+//        @SerializedName("zipcode")
+//        @Expose
+//        private String zipcode;
+//        @SerializedName("country_id")
+//        @Expose
+//        private String countryId;
+//
+//        public String getAddress() {
+//            return address;
+//        }
+//
+//        public void setAddress(String address) {
+//            this.address = address;
+//        }
+//
+//        public String getLocality() {
+//            return locality;
+//        }
+//
+//        public void setLocality(String locality) {
+//            this.locality = locality;
+//        }
+//
+//        public String getCity() {
+//            return city;
+//        }
+//
+//        public void setCity(String city) {
+//            this.city = city;
+//        }
+//
+//        public String getLatitude() {
+//            return latitude;
+//        }
+//
+//        public void setLatitude(String latitude) {
+//            this.latitude = latitude;
+//        }
+//
+//        public String getLongitude() {
+//            return longitude;
+//        }
+//
+//        public void setLongitude(String longitude) {
+//            this.longitude = longitude;
+//        }
+//
+//        public String getZipcode() {
+//            return zipcode;
+//        }
+//
+//        public void setZipcode(String zipcode) {
+//            this.zipcode = zipcode;
+//        }
+//
+//        public String getCountryId() {
+//            return countryId;
+//        }
+//
+//        public void setCountryId(String countryId) {
+//            this.countryId = countryId;
+//        }
+//
+//    }
 
 
 
     //user rating class
 
-    public class UserRating {
-
-        @SerializedName("aggregate_rating")
-        @Expose
-        private String aggregateRating;
-        @SerializedName("rating_text")
-        @Expose
-        private String ratingText;
-        @SerializedName("rating_color")
-        @Expose
-        private String ratingColor;
-        @SerializedName("votes")
-        @Expose
-        private String votes;
-
-        public String getAggregateRating() {
-            return aggregateRating;
-        }
-
-        public void setAggregateRating(String aggregateRating) {
-            this.aggregateRating = aggregateRating;
-        }
-
-        public String getRatingText() {
-            return ratingText;
-        }
-
-        public void setRatingText(String ratingText) {
-            this.ratingText = ratingText;
-        }
-
-        public String getRatingColor() {
-            return ratingColor;
-        }
-
-        public void setRatingColor(String ratingColor) {
-            this.ratingColor = ratingColor;
-        }
-
-        public String getVotes() {
-            return votes;
-        }
-
-        public void setVotes(String votes) {
-            this.votes = votes;
-        }
-
-    }
+//    public class UserRating {
+//
+//        @SerializedName("aggregate_rating")
+//        @Expose
+//        private String aggregateRating;
+//        @SerializedName("rating_text")
+//        @Expose
+//        private String ratingText;
+//        @SerializedName("rating_color")
+//        @Expose
+//        private String ratingColor;
+//        @SerializedName("votes")
+//        @Expose
+//        private String votes;
+//
+//        public String getAggregateRating() {
+//            return aggregateRating;
+//        }
+//
+//        public void setAggregateRating(String aggregateRating) {
+//            this.aggregateRating = aggregateRating;
+//        }
+//
+//        public String getRatingText() {
+//            return ratingText;
+//        }
+//
+//        public void setRatingText(String ratingText) {
+//            this.ratingText = ratingText;
+//        }
+//
+//        public String getRatingColor() {
+//            return ratingColor;
+//        }
+//
+//        public void setRatingColor(String ratingColor) {
+//            this.ratingColor = ratingColor;
+//        }
+//
+//        public String getVotes() {
+//            return votes;
+//        }
+//
+//        public void setVotes(String votes) {
+//            this.votes = votes;
+//        }
+//
+//    }
 
 
 
     //All review class
 
-    public class AllReview {
-
-        @SerializedName("rating")
-        @Expose
-        private String rating;
-        @SerializedName("review_text")
-        @Expose
-        private String reviewText;
-        @SerializedName("id")
-        @Expose
-        private String id;
-        @SerializedName("rating_color")
-        @Expose
-        private String ratingColor;
-        @SerializedName("review_time_friendly")
-        @Expose
-        private String reviewTimeFriendly;
-        @SerializedName("rating_text")
-        @Expose
-        private String ratingText;
-        @SerializedName("timestamp")
-        @Expose
-        private String timestamp;
-        @SerializedName("likes")
-        @Expose
-        private String likes;
-        @SerializedName("user")
-        @Expose
-        private User_ user;
-        @SerializedName("comments_count")
-        @Expose
-        private String commentsCount;
-
-        public String getRating() {
-            return rating;
-        }
-
-        public void setRating(String rating) {
-            this.rating = rating;
-        }
-
-        public String getReviewText() {
-            return reviewText;
-        }
-
-        public void setReviewText(String reviewText) {
-            this.reviewText = reviewText;
-        }
-
-        public String getId() {
-            return id;
-        }
-
-        public void setId(String id) {
-            this.id = id;
-        }
-
-        public String getRatingColor() {
-            return ratingColor;
-        }
-
-        public void setRatingColor(String ratingColor) {
-            this.ratingColor = ratingColor;
-        }
-
-        public String getReviewTimeFriendly() {
-            return reviewTimeFriendly;
-        }
-
-        public void setReviewTimeFriendly(String reviewTimeFriendly) {
-            this.reviewTimeFriendly = reviewTimeFriendly;
-        }
-
-        public String getRatingText() {
-            return ratingText;
-        }
-
-        public void setRatingText(String ratingText) {
-            this.ratingText = ratingText;
-        }
-
-        public String getTimestamp() {
-            return timestamp;
-        }
-
-        public void setTimestamp(String timestamp) {
-            this.timestamp = timestamp;
-        }
-
-        public String getLikes() {
-            return likes;
-        }
-
-        public void setLikes(String likes) {
-            this.likes = likes;
-        }
-
-        public User_ getUser() {
-            return user;
-        }
-
-        public void setUser(User_ user) {
-            this.user = user;
-        }
-
-        public String getCommentsCount() {
-            return commentsCount;
-        }
-
-        public void setCommentsCount(String commentsCount) {
-            this.commentsCount = commentsCount;
-        }
-
-    }
-
-
-    //user
-    public class User_ {
-
-        @SerializedName("name")
-        @Expose
-        private String name;
-        @SerializedName("zomato_handle")
-        @Expose
-        private String zomatoHandle;
-        @SerializedName("foodie_level")
-        @Expose
-        private String foodieLevel;
-        @SerializedName("foodie_level_num")
-        @Expose
-        private String foodieLevelNum;
-        @SerializedName("foodie_color")
-        @Expose
-        private String foodieColor;
-        @SerializedName("profile_url")
-        @Expose
-        private String profileUrl;
-        @SerializedName("profile_deeplink")
-        @Expose
-        private String profileDeeplink;
-        @SerializedName("profile_image")
-        @Expose
-        private String profileImage;
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public String getZomatoHandle() {
-            return zomatoHandle;
-        }
-
-        public void setZomatoHandle(String zomatoHandle) {
-            this.zomatoHandle = zomatoHandle;
-        }
-
-        public String getFoodieLevel() {
-            return foodieLevel;
-        }
-
-        public void setFoodieLevel(String foodieLevel) {
-            this.foodieLevel = foodieLevel;
-        }
-
-        public String getFoodieLevelNum() {
-            return foodieLevelNum;
-        }
-
-        public void setFoodieLevelNum(String foodieLevelNum) {
-            this.foodieLevelNum = foodieLevelNum;
-        }
-
-        public String getFoodieColor() {
-            return foodieColor;
-        }
-
-        public void setFoodieColor(String foodieColor) {
-            this.foodieColor = foodieColor;
-        }
-
-        public String getProfileUrl() {
-            return profileUrl;
-        }
-
-        public void setProfileUrl(String profileUrl) {
-            this.profileUrl = profileUrl;
-        }
-
-        public String getProfileDeeplink() {
-            return profileDeeplink;
-        }
-
-        public void setProfileDeeplink(String profileDeeplink) {
-            this.profileDeeplink = profileDeeplink;
-        }
-
-        public String getProfileImage() {
-            return profileImage;
-        }
-
-        public void setProfileImage(String profileImage) {
-            this.profileImage = profileImage;
-        }
-
-    }
-
-
-    //photos
-
-    public class Photo {
-
-        @SerializedName("id")
-        @Expose
-        private String id;
-        @SerializedName("url")
-        @Expose
-        private String url;
-        @SerializedName("thumb_url")
-        @Expose
-        private String thumbUrl;
-        @SerializedName("user")
-        @Expose
-        private User user;
-        @SerializedName("res_id")
-        @Expose
-        private String resId;
-        @SerializedName("caption")
-        @Expose
-        private String caption;
-        @SerializedName("timestamp")
-        @Expose
-        private String timestamp;
-        @SerializedName("friendly_time")
-        @Expose
-        private String friendlyTime;
-        @SerializedName("width")
-        @Expose
-        private String width;
-        @SerializedName("height")
-        @Expose
-        private String height;
-        @SerializedName("comments_count")
-        @Expose
-        private String commentsCount;
-        @SerializedName("likes_count")
-        @Expose
-        private String likesCount;
-
-        public String getId() {
-            return id;
-        }
-
-        public void setId(String id) {
-            this.id = id;
-        }
-
-        public String getUrl() {
-            return url;
-        }
-
-        public void setUrl(String url) {
-            this.url = url;
-        }
-
-        public String getThumbUrl() {
-            return thumbUrl;
-        }
-
-        public void setThumbUrl(String thumbUrl) {
-            this.thumbUrl = thumbUrl;
-        }
-
-        public User getUser() {
-            return user;
-        }
-
-        public void setUser(User user) {
-            this.user = user;
-        }
-
-        public String getResId() {
-            return resId;
-        }
-
-        public void setResId(String resId) {
-            this.resId = resId;
-        }
-
-        public String getCaption() {
-            return caption;
-        }
-
-        public void setCaption(String caption) {
-            this.caption = caption;
-        }
-
-        public String getTimestamp() {
-            return timestamp;
-        }
-
-        public void setTimestamp(String timestamp) {
-            this.timestamp = timestamp;
-        }
-
-        public String getFriendlyTime() {
-            return friendlyTime;
-        }
-
-        public void setFriendlyTime(String friendlyTime) {
-            this.friendlyTime = friendlyTime;
-        }
-
-        public String getWidth() {
-            return width;
-        }
-
-        public void setWidth(String width) {
-            this.width = width;
-        }
-
-        public String getHeight() {
-            return height;
-        }
-
-        public void setHeight(String height) {
-            this.height = height;
-        }
-
-        public String getCommentsCount() {
-            return commentsCount;
-        }
-
-        public void setCommentsCount(String commentsCount) {
-            this.commentsCount = commentsCount;
-        }
-
-        public String getLikesCount() {
-            return likesCount;
-        }
-
-        public void setLikesCount(String likesCount) {
-            this.likesCount = likesCount;
-        }
-
-    }
-
-
-
-    //user class
-
-    public class User {
-
-        @SerializedName("name")
-        @Expose
-        private String name;
-        @SerializedName("zomato_handle")
-        @Expose
-        private String zomatoHandle;
-        @SerializedName("foodie_level")
-        @Expose
-        private String foodieLevel;
-        @SerializedName("foodie_level_num")
-        @Expose
-        private String foodieLevelNum;
-        @SerializedName("foodie_color")
-        @Expose
-        private String foodieColor;
-        @SerializedName("profile_url")
-        @Expose
-        private String profileUrl;
-        @SerializedName("profile_deeplink")
-        @Expose
-        private String profileDeeplink;
-        @SerializedName("profile_image")
-        @Expose
-        private String profileImage;
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public String getZomatoHandle() {
-            return zomatoHandle;
-        }
-
-        public void setZomatoHandle(String zomatoHandle) {
-            this.zomatoHandle = zomatoHandle;
-        }
-
-        public String getFoodieLevel() {
-            return foodieLevel;
-        }
-
-        public void setFoodieLevel(String foodieLevel) {
-            this.foodieLevel = foodieLevel;
-        }
-
-        public String getFoodieLevelNum() {
-            return foodieLevelNum;
-        }
-
-        public void setFoodieLevelNum(String foodieLevelNum) {
-            this.foodieLevelNum = foodieLevelNum;
-        }
-
-        public String getFoodieColor() {
-            return foodieColor;
-        }
-
-        public void setFoodieColor(String foodieColor) {
-            this.foodieColor = foodieColor;
-        }
-
-        public String getProfileUrl() {
-            return profileUrl;
-        }
-
-        public void setProfileUrl(String profileUrl) {
-            this.profileUrl = profileUrl;
-        }
-
-        public String getProfileDeeplink() {
-            return profileDeeplink;
-        }
-
-        public void setProfileDeeplink(String profileDeeplink) {
-            this.profileDeeplink = profileDeeplink;
-        }
-
-        public String getProfileImage() {
-            return profileImage;
-        }
-
-        public void setProfileImage(String profileImage) {
-            this.profileImage = profileImage;
-        }
-
-    }
+//    public class AllReview {
+//
+//        @SerializedName("rating")
+//        @Expose
+//        private String rating;
+//        @SerializedName("review_text")
+//        @Expose
+//        private String reviewText;
+//        @SerializedName("id")
+//        @Expose
+//        private String id;
+//        @SerializedName("rating_color")
+//        @Expose
+//        private String ratingColor;
+//        @SerializedName("review_time_friendly")
+//        @Expose
+//        private String reviewTimeFriendly;
+//        @SerializedName("rating_text")
+//        @Expose
+//        private String ratingText;
+//        @SerializedName("timestamp")
+//        @Expose
+//        private String timestamp;
+//        @SerializedName("likes")
+//        @Expose
+//        private String likes;
+//        @SerializedName("user")
+//        @Expose
+//        private User_ user;
+//        @SerializedName("comments_count")
+//        @Expose
+//        private String commentsCount;
+//
+//        public String getRating() {
+//            return rating;
+//        }
+//
+//        public void setRating(String rating) {
+//            this.rating = rating;
+//        }
+//
+//        public String getReviewText() {
+//            return reviewText;
+//        }
+//
+//        public void setReviewText(String reviewText) {
+//            this.reviewText = reviewText;
+//        }
+//
+//        public String getId() {
+//            return id;
+//        }
+//
+//        public void setId(String id) {
+//            this.id = id;
+//        }
+//
+//        public String getRatingColor() {
+//            return ratingColor;
+//        }
+//
+//        public void setRatingColor(String ratingColor) {
+//            this.ratingColor = ratingColor;
+//        }
+//
+//        public String getReviewTimeFriendly() {
+//            return reviewTimeFriendly;
+//        }
+//
+//        public void setReviewTimeFriendly(String reviewTimeFriendly) {
+//            this.reviewTimeFriendly = reviewTimeFriendly;
+//        }
+//
+//        public String getRatingText() {
+//            return ratingText;
+//        }
+//
+//        public void setRatingText(String ratingText) {
+//            this.ratingText = ratingText;
+//        }
+//
+//        public String getTimestamp() {
+//            return timestamp;
+//        }
+//
+//        public void setTimestamp(String timestamp) {
+//            this.timestamp = timestamp;
+//        }
+//
+//        public String getLikes() {
+//            return likes;
+//        }
+//
+//        public void setLikes(String likes) {
+//            this.likes = likes;
+//        }
+//
+//        public User_ getUser() {
+//            return user;
+//        }
+//
+//        public void setUser(User_ user) {
+//            this.user = user;
+//        }
+//
+//        public String getCommentsCount() {
+//            return commentsCount;
+//        }
+//
+//        public void setCommentsCount(String commentsCount) {
+//            this.commentsCount = commentsCount;
+//        }
+//
+//    }
+//
+//
+//    //user
+//    public class User_ {
+//
+//        @SerializedName("name")
+//        @Expose
+//        private String name;
+//        @SerializedName("zomato_handle")
+//        @Expose
+//        private String zomatoHandle;
+//        @SerializedName("foodie_level")
+//        @Expose
+//        private String foodieLevel;
+//        @SerializedName("foodie_level_num")
+//        @Expose
+//        private String foodieLevelNum;
+//        @SerializedName("foodie_color")
+//        @Expose
+//        private String foodieColor;
+//        @SerializedName("profile_url")
+//        @Expose
+//        private String profileUrl;
+//        @SerializedName("profile_deeplink")
+//        @Expose
+//        private String profileDeeplink;
+//        @SerializedName("profile_image")
+//        @Expose
+//        private String profileImage;
+//
+//        public String getName() {
+//            return name;
+//        }
+//
+//        public void setName(String name) {
+//            this.name = name;
+//        }
+//
+//        public String getZomatoHandle() {
+//            return zomatoHandle;
+//        }
+//
+//        public void setZomatoHandle(String zomatoHandle) {
+//            this.zomatoHandle = zomatoHandle;
+//        }
+//
+//        public String getFoodieLevel() {
+//            return foodieLevel;
+//        }
+//
+//        public void setFoodieLevel(String foodieLevel) {
+//            this.foodieLevel = foodieLevel;
+//        }
+//
+//        public String getFoodieLevelNum() {
+//            return foodieLevelNum;
+//        }
+//
+//        public void setFoodieLevelNum(String foodieLevelNum) {
+//            this.foodieLevelNum = foodieLevelNum;
+//        }
+//
+//        public String getFoodieColor() {
+//            return foodieColor;
+//        }
+//
+//        public void setFoodieColor(String foodieColor) {
+//            this.foodieColor = foodieColor;
+//        }
+//
+//        public String getProfileUrl() {
+//            return profileUrl;
+//        }
+//
+//        public void setProfileUrl(String profileUrl) {
+//            this.profileUrl = profileUrl;
+//        }
+//
+//        public String getProfileDeeplink() {
+//            return profileDeeplink;
+//        }
+//
+//        public void setProfileDeeplink(String profileDeeplink) {
+//            this.profileDeeplink = profileDeeplink;
+//        }
+//
+//        public String getProfileImage() {
+//            return profileImage;
+//        }
+//
+//        public void setProfileImage(String profileImage) {
+//            this.profileImage = profileImage;
+//        }
+//
+//    }
+//
+//
+//    //photos
+//
+//    public class Photo {
+//
+//        @SerializedName("id")
+//        @Expose
+//        private String id;
+//        @SerializedName("url")
+//        @Expose
+//        private String url;
+//        @SerializedName("thumb_url")
+//        @Expose
+//        private String thumbUrl;
+//        @SerializedName("user")
+//        @Expose
+//        private User user;
+//        @SerializedName("res_id")
+//        @Expose
+//        private String resId;
+//        @SerializedName("caption")
+//        @Expose
+//        private String caption;
+//        @SerializedName("timestamp")
+//        @Expose
+//        private String timestamp;
+//        @SerializedName("friendly_time")
+//        @Expose
+//        private String friendlyTime;
+//        @SerializedName("width")
+//        @Expose
+//        private String width;
+//        @SerializedName("height")
+//        @Expose
+//        private String height;
+//        @SerializedName("comments_count")
+//        @Expose
+//        private String commentsCount;
+//        @SerializedName("likes_count")
+//        @Expose
+//        private String likesCount;
+//
+//        public String getId() {
+//            return id;
+//        }
+//
+//        public void setId(String id) {
+//            this.id = id;
+//        }
+//
+//        public String getUrl() {
+//            return url;
+//        }
+//
+//        public void setUrl(String url) {
+//            this.url = url;
+//        }
+//
+//        public String getThumbUrl() {
+//            return thumbUrl;
+//        }
+//
+//        public void setThumbUrl(String thumbUrl) {
+//            this.thumbUrl = thumbUrl;
+//        }
+//
+//        public User getUser() {
+//            return user;
+//        }
+//
+//        public void setUser(User user) {
+//            this.user = user;
+//        }
+//
+//        public String getResId() {
+//            return resId;
+//        }
+//
+//        public void setResId(String resId) {
+//            this.resId = resId;
+//        }
+//
+//        public String getCaption() {
+//            return caption;
+//        }
+//
+//        public void setCaption(String caption) {
+//            this.caption = caption;
+//        }
+//
+//        public String getTimestamp() {
+//            return timestamp;
+//        }
+//
+//        public void setTimestamp(String timestamp) {
+//            this.timestamp = timestamp;
+//        }
+//
+//        public String getFriendlyTime() {
+//            return friendlyTime;
+//        }
+//
+//        public void setFriendlyTime(String friendlyTime) {
+//            this.friendlyTime = friendlyTime;
+//        }
+//
+//        public String getWidth() {
+//            return width;
+//        }
+//
+//        public void setWidth(String width) {
+//            this.width = width;
+//        }
+//
+//        public String getHeight() {
+//            return height;
+//        }
+//
+//        public void setHeight(String height) {
+//            this.height = height;
+//        }
+//
+//        public String getCommentsCount() {
+//            return commentsCount;
+//        }
+//
+//        public void setCommentsCount(String commentsCount) {
+//            this.commentsCount = commentsCount;
+//        }
+//
+//        public String getLikesCount() {
+//            return likesCount;
+//        }
+//
+//        public void setLikesCount(String likesCount) {
+//            this.likesCount = likesCount;
+//        }
+//
+//    }
+//
+//
+//
+//    //user class
+//
+//    public class User {
+//
+//        @SerializedName("name")
+//        @Expose
+//        private String name;
+//        @SerializedName("zomato_handle")
+//        @Expose
+//        private String zomatoHandle;
+//        @SerializedName("foodie_level")
+//        @Expose
+//        private String foodieLevel;
+//        @SerializedName("foodie_level_num")
+//        @Expose
+//        private String foodieLevelNum;
+//        @SerializedName("foodie_color")
+//        @Expose
+//        private String foodieColor;
+//        @SerializedName("profile_url")
+//        @Expose
+//        private String profileUrl;
+//        @SerializedName("profile_deeplink")
+//        @Expose
+//        private String profileDeeplink;
+//        @SerializedName("profile_image")
+//        @Expose
+//        private String profileImage;
+//
+//        public String getName() {
+//            return name;
+//        }
+//
+//        public void setName(String name) {
+//            this.name = name;
+//        }
+//
+//        public String getZomatoHandle() {
+//            return zomatoHandle;
+//        }
+//
+//        public void setZomatoHandle(String zomatoHandle) {
+//            this.zomatoHandle = zomatoHandle;
+//        }
+//
+//        public String getFoodieLevel() {
+//            return foodieLevel;
+//        }
+//
+//        public void setFoodieLevel(String foodieLevel) {
+//            this.foodieLevel = foodieLevel;
+//        }
+//
+//        public String getFoodieLevelNum() {
+//            return foodieLevelNum;
+//        }
+//
+//        public void setFoodieLevelNum(String foodieLevelNum) {
+//            this.foodieLevelNum = foodieLevelNum;
+//        }
+//
+//        public String getFoodieColor() {
+//            return foodieColor;
+//        }
+//
+//        public void setFoodieColor(String foodieColor) {
+//            this.foodieColor = foodieColor;
+//        }
+//
+//        public String getProfileUrl() {
+//            return profileUrl;
+//        }
+//
+//        public void setProfileUrl(String profileUrl) {
+//            this.profileUrl = profileUrl;
+//        }
+//
+//        public String getProfileDeeplink() {
+//            return profileDeeplink;
+//        }
+//
+//        public void setProfileDeeplink(String profileDeeplink) {
+//            this.profileDeeplink = profileDeeplink;
+//        }
+//
+//        public String getProfileImage() {
+//            return profileImage;
+//        }
+//
+//        public void setProfileImage(String profileImage) {
+//            this.profileImage = profileImage;
+//        }
+//
+//    }
 
 
 

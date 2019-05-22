@@ -35,7 +35,8 @@ public class DetailsManager {
         }
 
        ApiInterface storeInterface = NetworkGenerator.getAuthClient(context).create(ApiInterface.class);
-        modelCall = storeInterface.getDetails("16774318");
+//        modelCall = storeInterface.getDetails("16774318");
+        modelCall = storeInterface.getDetails(id);
         BaseManager baseManager = new BaseManager(context);
         baseManager.sendRequest(modelCall, new DataCallBackListener() {
             @Override
