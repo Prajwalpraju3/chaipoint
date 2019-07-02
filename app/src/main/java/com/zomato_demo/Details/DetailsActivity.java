@@ -33,9 +33,9 @@ public class DetailsActivity extends AppCompatActivity {
         binding.setActivity(DetailsActivity.this);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
-            if (!TextUtils.isEmpty(bundle.getString(Const.Local.ID))) {
-                res_id = bundle.getString(Const.Local.ID);
-            }
+//            if (!TextUtils.isEmpty(bundle.getString(Const.Local.ID))) {
+//                res_id = bundle.getString(Const.Local.ID);
+//            }
         }
 
         binding.pg.setVisibility(View.VISIBLE);
@@ -76,18 +76,18 @@ public void nothing(){
 
     private void observeViewModel() {
         // Observe project data
-        deatailsViewModel.getObservable().observe(this, new Observer<DetailsModel>() {
-            @Override
-            public void onChanged(DetailsModel detailsModel) {
-                if (detailsModel!=null){
-                    binding.pg.setVisibility(View.GONE);
-                    binding.setDetails(detailsModel);
-                    deeplink=detailsModel.getDeeplink();
-
-
-                }
-            }
-        });
+//        deatailsViewModel.getObservable().observe(this, new Observer<DetailsModel>() {
+//            @Override
+//            public void onChanged(DetailsModel detailsModel) {
+//                if (detailsModel!=null){
+//                    binding.pg.setVisibility(View.GONE);
+//                    binding.setDetails(detailsModel);
+//                    deeplink=detailsModel.getDeeplink();
+//
+//
+//                }
+//            }
+//        });
     }
 
 
