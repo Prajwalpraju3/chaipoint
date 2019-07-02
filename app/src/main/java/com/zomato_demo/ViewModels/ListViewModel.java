@@ -2,8 +2,12 @@ package com.zomato_demo.ViewModels;
 
 import android.app.Application;
 
-import com.zomato_demo.models.DetailsModel;
 import com.zomato_demo.NetworkManager.DetailsManager;
+import com.zomato_demo.models.DataList;
+import com.zomato_demo.models.DetailsModel;
+import com.zomato_demo.models.Example;
+
+import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.ObservableField;
@@ -12,16 +16,15 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 
-public class DeatailsViewModel extends BaseViewModel {
+public class ListViewModel extends BaseViewModel {
 
-    private LiveData<DetailsModel> liveData;
-    private ObservableField<DetailsModel> observableField = new ObservableField<>();
-    DetailsManager detailsManager;
-    public DeatailsViewModel(Application application, String id){
+    private LiveData<List<Example>> liveData;
+    private ObservableField<List<Example>> observableField = new ObservableField<>();
+    private DetailsManager detailsManager;
+    private ListViewModel(Application application, String id){
         super(application);
         detailsManager = new DetailsManager(application);
         callNextPageResult(id);
-//        this.liveData = new StoreDetailsManager(application).getDetailsModelRequest(page,id);
     }
 
     private void callNextPageResult(String id){
@@ -29,12 +32,8 @@ public class DeatailsViewModel extends BaseViewModel {
     }
 
 
-    public LiveData<DetailsModel> getObservable() {
+    public LiveData<List<Example>> getObservable() {
         return liveData;
-    }
-
-    public void setModel(DetailsModel model) {
-        this.observableField.set(model);
     }
 
 
@@ -52,8 +51,7 @@ public class DeatailsViewModel extends BaseViewModel {
 
         @Override
         public <T extends ViewModel> T create(Class<T> modelClass) {
-            //noinspection unchecked
-            return (T) new DeatailsViewModel(application,id);
+            return (T) new ListViewModel(application,id);
         }
     }
 

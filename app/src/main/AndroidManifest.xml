@@ -17,15 +17,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Splash">
+        <activity android:name=".Activity.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ZomotoDetails.DetailsActivity"></activity>
-        <activity android:name=".ZomotoList.MainActivity">
+        <activity android:name=".Details.DetailsActivity"></activity>
+        <activity android:name=".Activity.MainActivity"
+            android:configChanges = "orientation"
+            android:screenOrientation = "portrait">
         </activity>
     </application>
 

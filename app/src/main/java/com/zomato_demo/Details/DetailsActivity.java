@@ -1,22 +1,18 @@
-package com.zomato_demo.ZomotoDetails;
+package com.zomato_demo.Details;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
-import com.zomato_demo.models.DetailsModel;
 import com.zomato_demo.R;
 import com.zomato_demo.ViewModels.DeatailsViewModel;
-import com.zomato_demo.common.Const;
 import com.zomato_demo.databinding.ActivityDetailsBinding;
 
 public class DetailsActivity extends AppCompatActivity {

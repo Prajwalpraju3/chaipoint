@@ -1,4 +1,4 @@
-package com.zomato_demo.ZomotoList;
+package com.zomato_demo.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -8,8 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.text.method.CharacterPickerDialog;
-import android.util.Log;
 import android.view.View;
 
 import com.zomato_demo.R;
@@ -17,7 +15,6 @@ import com.zomato_demo.ViewModels.ListViewModel;
 import com.zomato_demo.adapter.MyDataAdapter;
 import com.zomato_demo.databinding.ActivityMainBinding;
 import com.zomato_demo.models.Example;
-import com.zomato_demo.models.DataList;
 
 import java.util.List;
 
@@ -69,11 +66,11 @@ ActivityMainBinding binding;
     }
 
     private void observeViewModel() {
-        binding.llPgbar.setVisibility(View.GONE);
+
         listViewModel.getObservable().observe(this, new Observer<List<Example>>() {
             @Override
             public void onChanged(List<Example> examples) {
-
+                binding.llPgbar.setVisibility(View.GONE);
                 maindata = examples;
 
                 myDataAdapter = new MyDataAdapter(maindata,MainActivity.this);

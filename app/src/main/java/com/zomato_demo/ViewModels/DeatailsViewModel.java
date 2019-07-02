@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.zomato_demo.models.DetailsModel;
 import com.zomato_demo.NetworkManager.DetailsManager;
+import com.zomato_demo.models.Example;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.ObservableField;
@@ -20,18 +21,18 @@ public class DeatailsViewModel extends BaseViewModel {
     public DeatailsViewModel(Application application, String id){
         super(application);
         detailsManager = new DetailsManager(application);
-        callNextPageResult(id);
+//        callNextPageResult(id);
 //        this.liveData = new StoreDetailsManager(application).getDetailsModelRequest(page,id);
     }
 
-    private void callNextPageResult(String id){
-        this.liveData= detailsManager.getDetailsModelRequest(id);
-    }
+//    private void callNextPageResult(String id){
+//        this.liveData= detailsManager.getDetailsModelRequest(id);
+//    }
 
 
-    public LiveData<DetailsModel> getObservable() {
-        return liveData;
-    }
+//    public LiveData<Example> getObservable() {
+//        return liveData;
+//    }
 
     public void setModel(DetailsModel model) {
         this.observableField.set(model);

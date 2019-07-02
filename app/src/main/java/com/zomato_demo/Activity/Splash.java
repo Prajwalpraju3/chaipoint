@@ -1,4 +1,4 @@
-package com.zomato_demo;
+package com.zomato_demo.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.zomato_demo.Activity.MainActivity;
+import com.zomato_demo.R;
 
 public class Splash extends AppCompatActivity {
 

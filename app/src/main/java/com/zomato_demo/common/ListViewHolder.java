@@ -5,12 +5,9 @@ import android.content.Intent;
 import android.text.TextUtils;
 import android.view.View;
 
-import com.zomato_demo.ZomotoDetails.DetailsActivity;
+import com.zomato_demo.Details.DetailsActivity;
 import com.zomato_demo.databinding.ItemDetailsBinding;
 import com.zomato_demo.models.DetailsModel;
-import com.zomato_demo.models.ListModel;
-
-import java.util.HashMap;
 
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;

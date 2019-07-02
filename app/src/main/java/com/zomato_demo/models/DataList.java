@@ -3,9 +3,20 @@ package com.zomato_demo.models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class List {
+import java.util.ArrayList;
+import java.util.List;
 
-    @SerializedName("category")
+public class DataList {
+
+    @SerializedName("")
     @Expose
-    private Category category;
+    private List<Example> examples;
+
+    public List<Example> getExamples() {
+        return examples;
+    }
+
+    public void setExamples(List<Example> examples) {
+        this.examples = examples;
+    }
 }
